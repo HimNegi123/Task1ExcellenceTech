@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 396px;
+}
+
+.form-title {
+    color: #1c1e21;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #606770;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+    color: #1d2129;
+}
+
+.form-input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    outline: none;
+}
+
+.form-button {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 16px;
+    padding: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #166fe5;
+}
+
+.form-error {
+    color: #ff3b30;
+    font-size: 13px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.form-link {
+    border-top: 1px solid #dadde1;
+    color: #1c1e21;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form-link a {
+    color: #1877f2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .form-title {
+        font-size: 24px;
+    }
+
+    .form-input,
+    .form-button {
+        font-size: 16px;
+    }
+}
